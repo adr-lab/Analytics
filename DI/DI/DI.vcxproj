@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="InterpInterface.h" />
+    <ClInclude Include="LinearInterp.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bootstrap.cpp" />

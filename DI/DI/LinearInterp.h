@@ -1,4 +1,4 @@
-#include<iostream>
+#pragma once
 #include "InterpInterface.h"
 #include <vector>
 
@@ -7,9 +7,10 @@ using namespace std;
 //Class interpolation to be injected
 class LinearInterp : public InterpolationMethod {
 public:
-	virtual double Interpolate(vector<pair<double, double>> xy, double x) {
-		std::cout << "Linear on Fwd Rates" << std::endl;
+	 double Interpolate(vector<pair<double, double>>, double);
 
-		return 0;
-	}
+private:
+	vector<pair<double, double>> xy;
+	double x;
 };
+
